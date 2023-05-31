@@ -1,4 +1,6 @@
 <html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<style>
 	    *, *::after, *::before {
 	      box-sizing: border-box;
@@ -15,6 +17,10 @@
 	    :host([hidden]), .host[hidden] {
 	      display: none
 	    }
+	    html, body {
+		  height: 100%;
+		  margin: 0;
+		}
 	    .container {
 	      position: relative;
 	      width: 100%;
@@ -103,28 +109,29 @@
 	-webkit-background-size: 200vmax 200vmax; background-size: 200vmax 200vmax;
 	background-position: 0 0;
 	background-image: repeating-linear-gradient( -45deg, rgba(28,15,36,1) 0 calc(5vmin),transparent 0 calc(5vmin + 5vmin) );
-	-webkit-animation: move 150s linear infinite; animation: move 150s linear infinite; }#c-2-1-1 { -webkit-transform: translateZ(0); transform: translateZ(0);
+	-webkit-animation: move 150s linear infinite; animation: move 150s linear infinite; animation-direction: alternate; }#c-2-1-1 { -webkit-transform: translateZ(0); transform: translateZ(0);
 	-webkit-backface-visibility: hidden; backface-visibility: hidden;
 	will-change: background-size;
 	-webkit-background-size: 200vmax 200vmax; background-size: 200vmax 200vmax;
 	background-position: 100% 0;
 	background-image: repeating-linear-gradient( 45deg, rgba(28,15,36,1) 0 calc(5vmin),transparent 0 calc(5vmin + 5vmin) );
-	-webkit-animation: move-2 150s linear infinite; animation: move-2 150s linear infinite; }#c-1-2-1 { -webkit-transform: translateZ(0); transform: translateZ(0);
+	-webkit-animation: move-2 150s linear infinite; animation: move-2 150s linear infinite; animation-direction: alternate; }#c-1-2-1 { -webkit-transform: translateZ(0); transform: translateZ(0);
 	-webkit-backface-visibility: hidden; backface-visibility: hidden;
 	will-change: background-size;
 	-webkit-background-size: 200vmax 200vmax; background-size: 200vmax 200vmax;
 	background-position: 0 100%;
 	background-image: repeating-linear-gradient( -135deg, rgba(28,15,36,1) 0 calc(5vmin),transparent 0 calc(5vmin + 5vmin) );
-	-webkit-animation: move-3 150s linear infinite; animation: move-3 150s linear infinite; }#c-2-2-1 { -webkit-transform: translateZ(0); transform: translateZ(0);
+	-webkit-animation: move-3 150s linear infinite; animation: move-3 150s linear infinite; animation-direction: alternate; }#c-2-2-1 { -webkit-transform: translateZ(0); transform: translateZ(0);
 	-webkit-backface-visibility: hidden; backface-visibility: hidden;
 	will-change: background-size;
 	-webkit-background-size: 200vmax 200vmax; background-size: 200vmax 200vmax;
 	background-position: 100% 100%;
 	background-image: repeating-linear-gradient( 135deg, rgba(28,15,36,1) 0 calc(5vmin),transparent 0 calc(5vmin + 5vmin) );
-	-webkit-animation: move-4 150s linear infinite; animation: move-4 150s linear infinite; }
+	-webkit-animation: move-4 150s linear infinite; animation: move-4 150s linear infinite; animation-direction: alternate; }
 	</style>
+</head>
 
-	<body style="margin: 0px; height: 100vh;
+	<body style="margin: 0px; height: 100%;
     margin: 0px;
     z-index: -2;
     background-repeat: no-repeat;
